@@ -1,12 +1,13 @@
 /*
  * פרטי יצירת קשר: ערכו כאן.
  * whatsapp: מספר בפורמט בינלאומי בלי + ובלי 0 בהתחלה (לדוגמה 972501234567)
+ * instagram: שם המשתמש בלי @. השאירו ריק כדי להסתיר את הכרטיס.
  */
 var CONTACT = {
-  whatsapp: "972500000000",
-  whatsappDisplay: "050-000-0000",
-  email: "your@email.com",
-  instagram: "your_handle"
+  whatsapp: "972528850751",
+  whatsappDisplay: "052-885-0751",
+  email: "yuval.hassman@gmail.com",
+  instagram: ""
 };
 
 (function () {
@@ -72,8 +73,12 @@ var CONTACT = {
   document.getElementById("txtWhatsapp").textContent = CONTACT.whatsappDisplay;
   document.getElementById("linkEmail").href = "mailto:" + CONTACT.email;
   document.getElementById("txtEmail").textContent = CONTACT.email;
-  document.getElementById("linkInstagram").href = "https://instagram.com/" + CONTACT.instagram;
-  document.getElementById("txtInstagram").textContent = "@" + CONTACT.instagram;
+  if (CONTACT.instagram) {
+    document.getElementById("linkInstagram").href = "https://instagram.com/" + CONTACT.instagram;
+    document.getElementById("txtInstagram").textContent = "@" + CONTACT.instagram;
+  } else {
+    document.getElementById("linkInstagram").hidden = true;
+  }
 
   var form = document.getElementById("contactForm");
   function buildMessage() {
