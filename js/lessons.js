@@ -30,9 +30,9 @@ window.COURSE = {
       id: "ch2",
       title: "איך מתניעים?",
       lessons: [
-        { id: "start-1", title: "סרטון 1", duration: "", youtubeId: "IJsVUdFDTvg", description: "תיאור השיעור יופיע כאן.", notes: [] },
-        { id: "start-2", title: "סרטון 2", duration: "", youtubeId: "6JlQz5g5fJc", description: "תיאור השיעור יופיע כאן.", notes: [] },
-        { id: "start-3", title: "סרטון 3", duration: "", youtubeId: "-HFmH13hzjg", description: "תיאור השיעור יופיע כאן.", notes: [] }
+        { id: "start-1", title: "2 שאלות שיעזרו לצאת לדרך", duration: "", youtubeId: "IJsVUdFDTvg", description: "תיאור השיעור יופיע כאן.", notes: [] },
+        { id: "start-2", title: "מוטיבציה פנימית מול חיצונית", duration: "", youtubeId: "6JlQz5g5fJc", description: "תיאור השיעור יופיע כאן.", notes: [] },
+        { id: "start-3", title: "קובעים את האימון הראשון", duration: "", youtubeId: "-HFmH13hzjg", description: "תיאור השיעור יופיע כאן.", notes: [] }
       ]
     },
     {

@@ -113,11 +113,14 @@
       iframe.allowFullscreen = true;
       iframe.referrerPolicy = "strict-origin-when-cross-origin";
       frame.appendChild(iframe);
+      $("ytLink").href = "https://www.youtube.com/watch?v=" + encodeURIComponent(l.youtubeId);
+      $("ytLink").hidden = false;
     } else {
       frame.innerHTML =
         '<div class="video-placeholder"><div>' +
-        '<div class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></div>' +
+        '<div class="soon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>' +
         "<strong>הסרטון יעלה בקרוב</strong></div></div>";
+      $("ytLink").hidden = true;
     }
   }
 

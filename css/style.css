@@ -519,17 +519,19 @@ p { margin: 0 0 1em; }
   color: var(--gray-300);
   padding: 20px;
 }
-.video-placeholder .play {
-  width: 76px;
-  height: 76px;
+.video-placeholder .soon {
+  width: 64px;
+  height: 64px;
   border-radius: 50%;
-  background: var(--red);
+  border: 2px solid var(--black-3);
   display: grid;
   place-items: center;
-  margin: 0 auto 16px;
+  margin: 0 auto 14px;
 }
-.video-placeholder .play svg { width: 30px; height: 30px; fill: var(--white); margin-inline-start: 4px; }
-[dir="rtl"] .video-placeholder .play svg { transform: scaleX(-1); margin-inline-start: 0; margin-inline-end: 4px; }
+.video-placeholder .soon svg { width: 30px; height: 30px; fill: none; stroke: var(--gray-500); stroke-width: 2; stroke-linecap: round; }
+.yt-link { display: inline-block; margin-top: 10px; font-size: 0.85rem; color: var(--gray-500); }
+.yt-link:hover { color: var(--red); }
+.yt-link[hidden] { display: none; }
 
 .lesson-actions {
   display: flex;
