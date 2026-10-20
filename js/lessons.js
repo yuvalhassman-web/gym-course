@@ -50,7 +50,7 @@ window.COURSE = {
       lessons: [
         { id: "basics-1", title: "הסבר לחיצת חזה", duration: "", youtubeId: "loPpYnN5S7I", description: "תיאור השיעור יופיע כאן.", notes: [] },
         { id: "basics-transition", title: "מעבר לפני התרגיל הבא", duration: "", youtubeId: "i-SZw5JG_KQ", isTransition: true, description: "סרטון מעבר קצר.", notes: [] },
-        { id: "basics-2", title: "סרטון 2", duration: "", youtubeId: "", description: "תיאור השיעור יופיע כאן.", notes: [] },
+        { id: "basics-2", title: "הסבר עליות מתח", duration: "", youtubeId: "_fAGQrkOC1U", description: "תיאור השיעור יופיע כאן.", notes: [] },
         { id: "basics-transition-2", title: "מעבר לפני התרגיל הבא", duration: "", youtubeId: "i-SZw5JG_KQ", isTransition: true, description: "סרטון מעבר קצר.", notes: [] },
         { id: "basics-3", title: "לחיצת כתף", duration: "", youtubeId: "a_hBTyVQ_28", description: "תיאור השיעור יופיע כאן.", notes: [] }
       ]
