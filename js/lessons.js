@@ -72,9 +72,9 @@ window.COURSE = {
       lessons: [
         {
           id: "summary",
-          title: "מעקב התקדמות",
+          title: "איך עוקבים על ההתקדמות",
           duration: "",
-          youtubeId: "",
+          youtubeId: "MBUseiTvgEM",
           description: "איך לעקוב אחרי ההתקדמות שלכם ולהמשיך להשתפר גם אחרי הקורס.",
           notes: []
         }
