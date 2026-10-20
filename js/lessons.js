@@ -48,10 +48,11 @@ window.COURSE = {
       id: "ch4",
       title: "התחלת תרגילי יסוד",
       lessons: [
-        { id: "basics-1", title: "סרטון 1", duration: "", youtubeId: "", description: "תיאור השיעור יופיע כאן.", notes: [] },
+        { id: "basics-1", title: "הסבר לחיצת חזה", duration: "", youtubeId: "loPpYnN5S7I", description: "תיאור השיעור יופיע כאן.", notes: [] },
+        { id: "basics-transition", title: "מעבר לפני התרגיל הבא", duration: "", youtubeId: "i-SZw5JG_KQ", isTransition: true, description: "סרטון מעבר קצר.", notes: [] },
         { id: "basics-2", title: "סרטון 2", duration: "", youtubeId: "", description: "תיאור השיעור יופיע כאן.", notes: [] },
-        { id: "basics-transition", title: "מעבר", duration: "", youtubeId: "", isTransition: true, description: "סרטון מעבר קצר.", notes: [] },
-        { id: "basics-3", title: "סרטון 3", duration: "", youtubeId: "", description: "תיאור השיעור יופיע כאן.", notes: [] }
+        { id: "basics-transition-2", title: "מעבר לפני התרגיל הבא", duration: "", youtubeId: "i-SZw5JG_KQ", isTransition: true, description: "סרטון מעבר קצר.", notes: [] },
+        { id: "basics-3", title: "לחיצת כתף", duration: "", youtubeId: "a_hBTyVQ_28", description: "תיאור השיעור יופיע כאן.", notes: [] }
       ]
     },
     {
