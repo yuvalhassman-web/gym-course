@@ -59,9 +59,11 @@ window.COURSE = {
       id: "ch5",
       title: "האימון השני - המשך תרגילי יסוד",
       lessons: [
-        { id: "w2-1", title: "סרטון 1", duration: "", youtubeId: "", description: "תיאור השיעור יופיע כאן.", notes: [] },
-        { id: "w2-transition", title: "מעבר", duration: "", youtubeId: "", isTransition: true, description: "סרטון מעבר קצר.", notes: [] },
-        { id: "w2-2", title: "סרטון 2", duration: "", youtubeId: "", description: "תיאור השיעור יופיע כאן.", notes: [] }
+        { id: "w2-1", title: "סקווטים", duration: "", youtubeId: "4P3ha_fCmrc", description: "תיאור השיעור יופיע כאן.", notes: [] },
+        { id: "w2-transition", title: "מעבר לפני התרגיל הבא", duration: "", youtubeId: "i-SZw5JG_KQ", isTransition: true, description: "סרטון מעבר קצר.", notes: [] },
+        { id: "w2-2", title: "הסבר דדליפט", duration: "", youtubeId: "YO3lLC_pliA", description: "תיאור השיעור יופיע כאן.", notes: [] },
+        { id: "w2-transition-2", title: "מעבר לפני התרגיל הבא", duration: "", youtubeId: "i-SZw5JG_KQ", isTransition: true, description: "סרטון מעבר קצר.", notes: [] },
+        { id: "w2-3", title: "לאנג'ים (תרגיל בונוס)", duration: "", youtubeId: "kbKWKuHOb5s", description: "תיאור השיעור יופיע כאן.", notes: [] }
       ]
     },
     {
