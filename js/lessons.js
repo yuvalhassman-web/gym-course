@@ -30,7 +30,7 @@ window.COURSE = {
       id: "ch2",
       title: "איך מתניעים?",
       lessons: [
-        { id: "start-1", title: "סרטון 1", duration: "", youtubeId: "", description: "תיאור השיעור יופיע כאן.", notes: [] },
+        { id: "start-1", title: "סרטון 1", duration: "", youtubeId: "IJsVUdFDTvg", description: "תיאור השיעור יופיע כאן.", notes: [] },
         { id: "start-2", title: "סרטון 2", duration: "", youtubeId: "", description: "תיאור השיעור יופיע כאן.", notes: [] },
         { id: "start-3", title: "סרטון 3", duration: "", youtubeId: "", description: "תיאור השיעור יופיע כאן.", notes: [] }
       ]
