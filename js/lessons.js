@@ -7,6 +7,7 @@
  *   כל עוד השדה ריק, יוצגה הודעה "הסרטון יעלה בקרוב".
  *
  * isTransition: true לסרטון מעבר קצר (מסומן בתגית "מעבר").
+ * downloads: קבצים להורדה מתחת לסרטון. שמים את הקובץ בתיקיית assets.
  * id: מזהה ייחודי לשיעור. אל תשנו אותו אחרי העלייה לאוויר, כי ההתקדמות נשמרת לפיו.
  */
 window.COURSE = {
@@ -75,6 +76,9 @@ window.COURSE = {
           title: "איך עוקבים על ההתקדמות",
           duration: "",
           youtubeId: "MBUseiTvgEM",
+          downloads: [
+            { label: "הורדת קובץ מעקב התקדמות (Excel)", file: "assets/workout-progress-template.xlsx", saveAs: "קובץ מעקב התקדמות.xlsx" }
+          ],
           description:
             "מכאן כל מה שנשאר לכם הוא להוריד את הטמפלייט.\n\n" +
             "הסבר קצר על הטמפלייט:\n" +

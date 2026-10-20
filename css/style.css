@@ -555,6 +555,9 @@ p { margin: 0 0 1em; }
 .lesson-content h2 { font-size: 1.2rem; }
 .lesson-content h2:not(:first-child) { margin-top: 28px; }
 .lesson-content .desc { color: var(--gray-700); white-space: pre-line; }
+.downloads { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 28px; padding-bottom: 24px; border-bottom: 1px solid var(--gray-300); }
+.downloads[hidden] { display: none; }
+.download-btn svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; }
 .notes-list { margin: 0; padding-inline-start: 22px; }
 .notes-list li { margin-bottom: 8px; }
 .notes-list li::marker { color: var(--red); }

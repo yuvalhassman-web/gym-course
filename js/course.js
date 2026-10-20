@@ -136,6 +136,19 @@
 
     renderVideo(l);
 
+    var dl = $("lessonDownloads");
+    dl.innerHTML = "";
+    (l.downloads || []).forEach(function (d) {
+      var a = document.createElement("a");
+      a.className = "btn btn-primary download-btn";
+      a.href = d.file;
+      a.setAttribute("download", d.saveAs || "");
+      a.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 19h16"/></svg><span></span>';
+      a.querySelector("span").textContent = d.label;
+      dl.appendChild(a);
+    });
+    dl.hidden = !dl.children.length;
+
     $("lessonDesc").textContent = l.description || "";
     var notes = l.notes || [];
     var ul = $("lessonNotes");
