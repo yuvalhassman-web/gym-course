@@ -39,9 +39,9 @@ window.COURSE = {
       id: "ch3",
       title: "מתחילים - האימון הראשון",
       lessons: [
-        { id: "w1-1", title: "סרטון 1", duration: "", youtubeId: "", description: "תיאור השיעור יופיע כאן.", notes: [] },
-        { id: "w1-2", title: "סרטון 2", duration: "", youtubeId: "", description: "תיאור השיעור יופיע כאן.", notes: [] },
-        { id: "w1-3", title: "סרטון 3", duration: "", youtubeId: "", description: "תיאור השיעור יופיע כאן.", notes: [] }
+        { id: "w1-1", title: "הסבר תוך חימום", duration: "", youtubeId: "D8zXHqwgqAA", description: "תיאור השיעור יופיע כאן.", notes: [] },
+        { id: "w1-2", title: "הסבר רמת מאמץ", duration: "", youtubeId: "jaYV9m7u1sQ", description: "תיאור השיעור יופיע כאן.", notes: [] },
+        { id: "w1-3", title: "נפח אימון ועומס יסף", duration: "", youtubeId: "eJDga_8WIx0", description: "תיאור השיעור יופיע כאן.", notes: [] }
       ]
     },
     {
