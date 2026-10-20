@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>הקורס | איך להתחיל להתאמן לבד בחדר כושר</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="course-body">
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">מתאמנים <span>לבד</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="תפריט" aria-expanded="false">☰</button>
+      <nav class="nav" id="nav">
+        <a href="index.html">דף הבית</a>
+        <a href="index.html#contact" class="btn btn-primary btn-sm">אימון אישי</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="course-layout">
+    <!-- סרגל צד: רשימת שיעורים -->
+    <aside class="sidebar dark" id="sidebar" aria-label="רשימת שיעורים">
+      <div class="sidebar-head">
+        <button class="sidebar-close" id="sidebarClose" aria-label="סגירה">✕</button>
+        <h2>התקדמות בקורס</h2>
+        <div class="progress-label">
+          <span id="sbProgressText">0/0 שיעורים</span>
+          <span class="pct" id="sbProgressPct">0%</span>
+        </div>
+        <div class="progress-bar" id="sbProgressBar" role="progressbar" aria-valuemin="0" aria-valuemax="100"><span></span></div>
+      </div>
+      <nav id="chapterNav"><!-- נבנה אוטומטית --></nav>
+      <div class="sidebar-foot">
+        <button class="link-btn" id="resetBtn">איפוס התקדמות</button>
+      </div>
+    </aside>
+    <div class="overlay" id="overlay"></div>
+
+    <!-- תוכן השיעור -->
+    <main class="lesson-main">
+      <div class="lesson-wrap">
+        <div class="mobile-bar">
+          <button class="btn btn-dark btn-sm" id="sidebarOpen">☰ רשימת שיעורים</button>
+          <div class="mini-progress">
+            <div class="progress-label"><span id="mbProgressText"></span></div>
+            <div class="progress-bar" id="mbProgressBar"><span></span></div>
+          </div>
+        </div>
+
+        <div class="lesson-crumb" id="lessonCrumb"></div>
+        <h1 class="lesson-heading" id="lessonTitle"></h1>
+
+        <div class="video-frame" id="videoFrame"></div>
+
+        <div class="lesson-actions">
+          <button class="btn btn-primary btn-complete" id="completeBtn">סימון כהושלם ✓</button>
+          <div class="lesson-nav">
+            <button class="btn btn-ghost" id="prevBtn">→ הקודם</button>
+            <button class="btn btn-ghost" id="nextBtn">הבא ←</button>
+          </div>
+        </div>
+
+        <article class="lesson-content">
+          <h2>על השיעור</h2>
+          <p class="desc" id="lessonDesc"></p>
+          <div id="notesSection">
+            <h2>דגשים והערות</h2>
+            <ul class="notes-list" id="lessonNotes"></ul>
+          </div>
+        </article>
+
+        <div class="course-done" id="courseDone">
+          <h2>כל הכבוד! סיימתם את הקורס 🎉</h2>
+          <p>עכשיו הזמן ליישם. רוצים ליווי אישי כדי להמשיך להתקדם?</p>
+          <a href="index.html#contact" class="btn btn-primary">לאימון אישי</a>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/lessons.js"></script>
+  <script src="js/progress.js"></script>
+  <script src="js/course.js"></script>
+</body>
+</html>

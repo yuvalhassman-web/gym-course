@@ -1,0 +1,89 @@
+/*
+ * תוכן הקורס — זה הקובץ היחיד שצריך לערוך כדי לעדכן שיעורים.
+ *
+ * youtubeId: המזהה של הסרטון מהקישור ביוטיוב.
+ *   לדוגמה, בקישור https://youtu.be/dQw4w9WgXcQ המזהה הוא dQw4w9WgXcQ
+ *   סרטונים במצב "לא רשום" (Unlisted) עובדים כרגיל.
+ *   כל עוד השדה ריק, יוצגה הודעה "הסרטון יעלה בקרוב".
+ *
+ * isTransition: true לסרטון מעבר קצר (מסומן בתגית "מעבר").
+ * id: מזהה ייחודי לשיעור. אל תשנו אותו אחרי העלייה לאוויר, כי ההתקדמות נשמרת לפיו.
+ */
+window.COURSE = {
+  title: "איך להתחיל להתאמן לבד בחדר כושר",
+  chapters: [
+    {
+      id: "ch1",
+      title: "פתיח היכרות",
+      lessons: [
+        {
+          id: "intro",
+          title: "פתיח היכרות",
+          duration: "",
+          youtubeId: "",
+          description: "ברוכים הבאים לקורס! בסרטון הזה נכיר, נסביר מה מחכה לכם בקורס ואיך להפיק ממנו את המקסימום.",
+          notes: ["צפו בשיעורים לפי הסדר.", "סמנו כל שיעור כהושלם כדי לעקוב אחרי ההתקדמות שלכם."]
+        }
+      ]
+    },
+    {
+      id: "ch2",
+      title: "איך מתניעים?",
+      lessons: [
+        { id: "start-1", title: "סרטון 1", duration: "", youtubeId: "", description: "תיאור השיעור יופיע כאן.", notes: [] },
+        { id: "start-2", title: "סרטון 2", duration: "", youtubeId: "", description: "תיאור השיעור יופיע כאן.", notes: [] },
+        { id: "start-3", title: "סרטון 3", duration: "", youtubeId: "", description: "תיאור השיעור יופיע כאן.", notes: [] }
+      ]
+    },
+    {
+      id: "ch3",
+      title: "מתחילים - האימון הראשון",
+      lessons: [
+        { id: "w1-1", title: "סרטון 1", duration: "", youtubeId: "", description: "תיאור השיעור יופיע כאן.", notes: [] },
+        { id: "w1-2", title: "סרטון 2", duration: "", youtubeId: "", description: "תיאור השיעור יופיע כאן.", notes: [] },
+        { id: "w1-3", title: "סרטון 3", duration: "", youtubeId: "", description: "תיאור השיעור יופיע כאן.", notes: [] }
+      ]
+    },
+    {
+      id: "ch4",
+      title: "התחלת תרגילי יסוד",
+      lessons: [
+        { id: "basics-1", title: "סרטון 1", duration: "", youtubeId: "", description: "תיאור השיעור יופיע כאן.", notes: [] },
+        { id: "basics-2", title: "סרטון 2", duration: "", youtubeId: "", description: "תיאור השיעור יופיע כאן.", notes: [] },
+        { id: "basics-transition", title: "מעבר", duration: "", youtubeId: "", isTransition: true, description: "סרטון מעבר קצר.", notes: [] },
+        { id: "basics-3", title: "סרטון 3", duration: "", youtubeId: "", description: "תיאור השיעור יופיע כאן.", notes: [] }
+      ]
+    },
+    {
+      id: "ch5",
+      title: "האימון השני - המשך תרגילי יסוד",
+      lessons: [
+        { id: "w2-1", title: "סרטון 1", duration: "", youtubeId: "", description: "תיאור השיעור יופיע כאן.", notes: [] },
+        { id: "w2-transition", title: "מעבר", duration: "", youtubeId: "", isTransition: true, description: "סרטון מעבר קצר.", notes: [] },
+        { id: "w2-2", title: "סרטון 2", duration: "", youtubeId: "", description: "תיאור השיעור יופיע כאן.", notes: [] }
+      ]
+    },
+    {
+      id: "ch6",
+      title: "סיכום - מעקב התקדמות",
+      lessons: [
+        {
+          id: "summary",
+          title: "מעקב התקדמות",
+          duration: "",
+          youtubeId: "",
+          description: "איך לעקוב אחרי ההתקדמות שלכם ולהמשיך להשתפר גם אחרי הקורס.",
+          notes: []
+        }
+      ]
+    }
+  ]
+};
+
+/* רשימה שטוחה של כל השיעורים עם מספור רציף — לשימוש פנימי */
+window.COURSE.allLessons = window.COURSE.chapters.flatMap(function (ch, chIndex) {
+  return ch.lessons.map(function (l) {
+    return Object.assign({}, l, { chapterId: ch.id, chapterTitle: ch.title, chapterNumber: chIndex + 1 });
+  });
+});
+window.COURSE.allLessons.forEach(function (l, i) { l.number = i + 1; });
